@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rock.css">
+    <title>Rock Paper scissor</title>
+</head>
+
+<body>
+    <div>
+        <h2>Rock Paper Scissor Game</h2>
+        <div class="btn-group">
+            <button class="btn" onclick=Rock()>Rock</button>
+            <button class="btn" onclick=Papper()>Papper</button>
+            <button class="btn" onclick=Scissor()>Scissor</button>
+        </div>
+
+
+    </div>
+
+    <script>
+
+        let computerMove = "";
+
+        function Rock() {
+            computerMove = Math.random();
+            // console.log(computerMove);
+            let playerMove = "Rock";
+            if (computerMove > 0 && computerMove < 1 / 3) {
+                console.log(`Player select ${playerMove} & Comp select ${computerMove && "rock"}... Game Tie !`);
+            } else if (computerMove > 1 / 3 && computerMove < 2 / 3) {
+                console.log(`Player select ${playerMove} & Comp select ${computerMove && "Papper"}... You lose !`);
+            } else if (computerMove > 2 / 3 && computerMove < 1)
+                console.log(`Player select ${playerMove} & Comp select ${computerMove && "Scissor"}... You won !`);
+        };
+
+        function Papper() {
+            computerMove = Math.random();
+            // console.log(computerMove);
+            let playerMove = "Papper";
+            if (computerMove > 0 && computerMove < 1 / 3) {
+                console.log(`Player select ${playerMove} & Comp select ${computerMove && "Rock"}...  You won!`);
+            } else if (computerMove > 1 / 3 && computerMove < 2 / 3) {
+                console.log(`Player select ${playerMove} & Comp select ${computerMove && "Papper"}... Game Tie !`);
+            } else if (computerMove > 2 / 3 && computerMove < 1)
+                console.log(`Player select ${playerMove} & Comp select ${computerMove && "Scissor"}... You lose !`);
+        };
+
+        function Scissor() {
+            computerMove = Math.random();
+            // console.log(computerMove);
+            let playerMove = "Scissor";
+            if (computerMove > 0 && computerMove < 1 / 3) {
+                console.log(`Player select ${playerMove} & Comp select ${computerMove && "Rock"}...  You lose!`);
+            } else if (computerMove > 1 / 3 && computerMove < 2 / 3) {
+                console.log(`Player select ${playerMove} & Comp select ${computerMove && "Papper"}... You Won !`);
+            } else if (computerMove > 2 / 3 && computerMove < 1)
+                console.log(`Player select ${playerMove} & Comp select ${computerMove && "Scissor"}... Game Tie !`);
+        };
+
+    </script>
+</body>
+
+</html>

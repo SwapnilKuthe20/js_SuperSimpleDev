@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    padding: 15px;
+    border: 2px solid black;
+    
+}
+h2{
+    margin: 10px 0 10px 10px;
+    color: chocolate;
+}
+.btn{
+    background-color: brown;
+    color: white;
+    border-radius: 5px;
+    font-size: large;
+    border: 2px;
+    padding: 5px;
+    margin: 5px;
+}
+.btn1{
+    background-color: rgb(18, 224, 46);
+    color: white;
+    font-size: larger;
+    border-radius: 5px;
+    padding: 5px;
+    border: 2px;
+}
